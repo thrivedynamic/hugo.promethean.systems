@@ -1,0 +1,12 @@
+@import "theme/vars";
+
+:root {
+  --primary: {{ .Site.Params.colors.primary | default "#3f51b5" }};
+}
+
+.responsive-img {
+  @include hugo-media-breakpoint-down(md) {
+    width: 100%;
+    height: auto;
+  }
+}

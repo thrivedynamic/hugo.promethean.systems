@@ -1,2 +1,4 @@
 # This .gitignore is appropriate for repositories deployed to Cloudflare Pages
-public/
+.hugo*
+public/*
+resources/*
