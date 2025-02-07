@@ -1,5 +1,8 @@
-description: "A modern Hugo website"
-author: "Promethean Systems"
 colors:
   primary: "#2d3436"
   secondary: "#0984e3"
+
+features:
+  darkMode: true
+  search: true
+  comments: false

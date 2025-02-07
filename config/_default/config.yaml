@@ -1,44 +1,37 @@
 baseURL: "https://hugo.promethean.systems/"
 title: "Promethean Systems v1"
 theme: "ananke"
-languageCode: en-us
-copyright: Copyright (C) Promethean Systems, 2025
-
-paginate: 10
-enableRobotsTXT: true
+languageCode: "en-us"
+defaultContentLanguage: "en"
+copyright: "Copyright (C) Promethean Systems, 2025"
 
 params:
+  description: "Corporate site"
   contact:
     email: info@promethean.systems
     phone: +31 6 25030662
   subtitle: Resistance is futile!
   color_theme: "auto" # dark/light/auto
+  favicon: "/images/favicon.png"
+  socialImage: "/images/social.png"
   featured_image: /images/default-featured-image.jpg
-  social_image: /images/social-image.jpg
+  enableRobotsTXT: true
+  enableGitInfo: true
 
-menu:
-  main:
-    - identifier: "home"
-      name: "Home"
-      url: "/"
-      weight: 1
-    - identifier: "about"
-      name: "About Us"
-      url: "/about/"
-      weight: 2
-    - identifier: "products"
-      name: "Products"
-      url: "/products/"
-      weight: 3
-    - identifier: "contact"
-      name: "Contact"
-      url: "/contact/"
-      weight: 4
+build:
+  writeStats: true
+  useResourceCacheWhen: fallback
+  cachebusters:
+    - source: assets/.*
+      target: assets/.*
 
 markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    style: "github"
+    noClasses: false
 
 outputs:
   home: ["HTML", "RSS", "JSON"]
