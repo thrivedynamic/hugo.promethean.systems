@@ -1,8 +1,11 @@
-baseURL: https://hugo.promethean.systems/
-title: Promethean Systems v1
+baseURL: "https://hugo.promethean.systems/"
+title: "Promethean Systems v1"
 theme: "ananke"
 languageCode: en-us
 copyright: Copyright (C) Promethean Systems, 2025
+
+paginate: 10
+enableRobotsTXT: true
 
 params:
   contact:
@@ -12,6 +15,33 @@ params:
   color_theme: "auto" # dark/light/auto
   featured_image: /images/default-featured-image.jpg
   social_image: /images/social-image.jpg
+
+menu:
+  main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 1
+    - identifier: "about"
+      name: "About Us"
+      url: "/about/"
+      weight: 2
+    - identifier: "products"
+      name: "Products"
+      url: "/products/"
+      weight: 3
+    - identifier: "contact"
+      name: "Contact"
+      url: "/contact/"
+      weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
 
 security:
   funcs:
