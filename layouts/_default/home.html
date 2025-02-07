@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+  {{ .Content }}
+
+  <ul>
+
+    {{ range where site.RegularPages "Section" "articles" }}
+
+      {{ .Render "card" }}
+
+    {{ end }}
+
+  </ul>
+
+{{ end }}

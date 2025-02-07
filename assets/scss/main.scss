@@ -1,0 +1,16 @@
+:root {
+    --primary: {{ .Site.Params.colors.primary }};
+    --secondary: {{ .Site.Params.colors.secondary }};
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--primary);
+}
+
+a {
+    color: var(--secondary);
+    &:hover {
+        opacity: 0.8;
+    }
+}

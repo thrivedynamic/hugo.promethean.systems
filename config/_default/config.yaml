@@ -34,7 +34,8 @@ markup:
     noClasses: false
 
 outputs:
-  home: ["HTML", "RSS", "JSON"]
+  home: ["HTML"]
+#  home: ["HTML", "RSS", "JSON"]
 
 security:
   funcs:
