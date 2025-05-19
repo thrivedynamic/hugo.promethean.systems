@@ -4,3 +4,5 @@ draft: false
 title: 'Contact'
 layout: 'contact'
 ---
+
+Our head-office is in Netherlands. You can reach us at ...
