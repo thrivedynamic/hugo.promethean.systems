@@ -1,0 +1,20 @@
+description: "Corporate site"
+contact:
+  email: info@promethean.systems
+  phone: +31 6 25030662
+subtitle: Resistance is futile!
+color_theme: "auto" # dark/light/auto
+favicon: "/images/favicon.png"
+socialImage: "/images/social.png"
+featured_image: /images/default-featured-image.jpg
+enableRobotsTXT: true
+enableGitInfo: true
+  
+colors:
+  primary: "#2d3436"
+  secondary: "#0984e3"
+
+features:
+  darkMode: false
+  search: false
+  comments: false

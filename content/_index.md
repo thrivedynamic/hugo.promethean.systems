@@ -1,5 +1,7 @@
 ---
-title: "Welcome to Promethean Systems"
+title: "Home"
+subtitle: "Subtitle - home/landing page"
+
 sections:
   - title: "Introduction"
     content: "This is our main page with smooth scrolling."

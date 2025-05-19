@@ -1,15 +1,9 @@
 {{ define "main" }}
-
+  <h3>{{ .Params.Subtitle }}</h3>
   {{ .Content }}
 
-  <ul>
-
-    {{ range where site.RegularPages "Section" "articles" }}
-
-      {{ .Render "card" }}
-
-    {{ end }}
-
-  </ul>
+  {{ range site.RegularPages }}
+    <h2>><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  {{ end }}
 
 {{ end }}

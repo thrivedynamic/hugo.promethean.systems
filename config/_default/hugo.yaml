@@ -1,0 +1,53 @@
+title: "Promethean Systems (dev)"
+theme: "ananke"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+copyright: "Copyright (C) Promethean Systems, 2025"
+
+build:
+  writeStats: true
+  useResourceCacheWhen: fallback
+  cachebusters:
+    - source: assets/.*
+      target: assets/.*
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: "github"
+    noClasses: false
+
+outputs:
+  home: ["HTML"]
+#  home: ["HTML", "RSS", "JSON"]
+
+security:
+  funcs:
+    getenv: "^HUGO_"
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    disable: false
+    respectDoNotTrack: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  x:
+    disable: false
+    enableDNT: false
+    simple: false
+  youTube:
+    disable: false
+    privacyEnhanced: false
